@@ -817,6 +817,8 @@ abstract class ScaleTitleOptions {
 @anonymous
 @JS()
 abstract class TickOptions<T> {
+  external factory TickOptions({T min, T max, num maxTicksLimit});
+
   external bool get autoSkip;
   external set autoSkip(bool v);
   external bool get autoSkipPadding;
